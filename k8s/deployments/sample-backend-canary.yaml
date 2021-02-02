@@ -17,16 +17,12 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/in-gcp-ssicloudcoe/sample-img
+        image: gcr.io/in-gcp-ssicloudcoe/sample-img:v1.0.0
         resources:
           limits:
             memory: "500Mi"
             cpu: "100m"
         imagePullPolicy: Always
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 8080
         env:
         - name: COMPONENT
           value: backend
