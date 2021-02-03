@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: gcr.io/in-gcp-ssicloudcoe/sample-img:v1.0.0
+        image: gcr.io/in-gcp-ssicloudcoe/sample-img
         resources:
           limits:
             memory: "500Mi"
